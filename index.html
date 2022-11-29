@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Music Projectt</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!--Start of Container For Music-->
+    <div class="container">
+         <!--TODO Add onclick event listener-->
+        <div class="gallery"> <!--TODO Add onclick event listener for figures-->
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)" >
+                <img class="gallery__img" src="/JS-spotify/images/wish i knw you.jpg" alt="Wish I Knew you The Revivalist">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="/JS-spotify/images/starting over.jpeg" alt="Chris Stapleton Starting Over">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="/JS-spotify/images/iridescent.jpg" alt="Iridescent Linkin Park">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="/JS-spotify/images/all we ever knew.jpg" alt="All We Ever Knew">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="/JS-spotify/images/all i need.jpg" alt="All I Need Radiohead">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="/JS-spotify/images/black confetti.jpg" alt="Black Confetti Dreamers">
+            </figure>
+        </div>
+        <div class="buttoncontain">
+            <button onclick="stopSnippet()" >Stop Song</button>
+        </div>
+    </div>
+    
+</body>
+</html>
